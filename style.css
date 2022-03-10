@@ -1,0 +1,23 @@
+.pic-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+.second-pic {
+  margin-left: 100px;
+}
+.buttonTwo {
+  width: 350px 
+}
+img {
+  height: 350px;
+  width: auto; 
+  /* width: 350px;  */
+  box-shadow: 10px 10px 32px -12px rgba(0,0,0,0.75);
+  /* border: 1px solid black; */
+}
