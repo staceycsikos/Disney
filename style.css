@@ -1,6 +1,6 @@
 .pic-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 
 }
 
@@ -8,16 +8,85 @@ h1 {
   text-align: center;
 }
 
-.second-pic {
-  margin-left: 100px;
-}
-.buttonTwo {
-  width: 350px 
-}
+
 img {
   height: 350px;
-  width: auto; 
+  width: 350px; 
+  object-fit: contain;
   /* width: 350px;  */
   box-shadow: 10px 10px 32px -12px rgba(0,0,0,0.75);
   /* border: 1px solid black; */
+}
+
+
+.food-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+
+body {
+  background-image: url("https://imgur.com/a/lyrhxs6");
+  /* background-size: cover; */
+  height: 400px;
+  width: 100%;
+  /* background-color: pink; */
+}
+
+.mario-shines {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25)
+}
+
+.mario-words {
+  background-color: white;
+  position:absolute;
+  top: 40%;
+  left: 30%;
+  width: 40%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+.peach-shines {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25)
+}
+
+.peach-words {
+  background-color: white;
+  position:absolute;
+  top: 40%;
+  left: 30%;
+  width: 40%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+.bowser-shines {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25)
+}
+
+.bowser-words {
+  background-color: white;
+  position:absolute;
+  top: 40%;
+  left: 30%;
+  width: 40%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid red;
 }
