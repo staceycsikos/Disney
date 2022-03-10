@@ -10,7 +10,7 @@ let peachSpeach = document.querySelector(".peach-shines");
 let exitPeach = document.querySelector(".peach-close");
 let bowserSpeach = document.querySelector(".bowser-shines");
 let exitBowser = document.querySelector(".bowser-close");
-let page= document.querySelector(".container")
+let page= document.querySelector(".pic-container")
 
 //gets pictures for the mario, peach, bowser
 fetch("https://www.amiiboapi.com/api/amiibo/?gameseries=0x00")
@@ -21,16 +21,23 @@ fetch("https://www.amiiboapi.com/api/amiibo/?gameseries=0x00")
     bowser.src = data.amiibo[29].image;
   });
 
+// marioBtn.addEventListener("click", () => {
+//   marioSpeach.style.display = "block";
+//   exitMario.addEventListener("click", () => {
+//     marioSpeach.style.display = "none"; 
+//   });
+// });
+
 marioBtn.addEventListener("click", () => {
   marioSpeach.style.display = "block";
   exitMario.addEventListener("click", () => {
-    marioSpeach.style.display = "none";
+    marioSpeach.style.display = "none"; 
   });
 });
 
 peachBtn.addEventListener("click", () => {
   peachSpeach.style.display = "block";
-  pagePeach.addEventListener("click", () => {
+  exitPeach.addEventListener("click", () => {
     peachSpeach.style.display = "none";
   });
 });
