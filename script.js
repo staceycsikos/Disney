@@ -33,6 +33,11 @@ marioBtn.addEventListener("click", () => {
   exitMario.addEventListener("click", () => {
     marioSpeach.style.display = "none"; 
   });
+  window.onclick = function (event) {
+    if (event.target == marioSpeach) {
+      marioSpeach.style.display ="none";
+    }
+  }
 });
 
 peachBtn.addEventListener("click", () => {
@@ -40,6 +45,11 @@ peachBtn.addEventListener("click", () => {
   exitPeach.addEventListener("click", () => {
     peachSpeach.style.display = "none";
   });
+  window.onclick = function (event) {
+    if (event.target == peachSpeach) {
+      peachSpeach.style.display ="none";
+    }
+  }
 });
 
 bowserBtn.addEventListener("click", () => {
@@ -47,5 +57,10 @@ bowserBtn.addEventListener("click", () => {
   exitBowser.addEventListener("click", () => {
     bowserSpeach.style.display = "none";
   });
+  window.onclick = function (event) {
+    if (event.target == bowserSpeach) {
+      bowserSpeach.style.display ="none";
+    }
+  }
 });
 

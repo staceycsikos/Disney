@@ -21,6 +21,10 @@ img {
   box-shadow: 10px 10px 32px -12px rgba(0, 0, 0, 0.75);
 }
 
+button {
+  margin-left: 100px;
+}
+
 
 .mario-shines {
   display: none;
